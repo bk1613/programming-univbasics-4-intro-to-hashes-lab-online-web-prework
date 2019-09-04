@@ -30,7 +30,3 @@ def update_counting_hash(hash, key)
   end
   return hash
 end
-
-hash = {:apples => 4}
-key = :apple
-update_counting_hash(hash, key)
