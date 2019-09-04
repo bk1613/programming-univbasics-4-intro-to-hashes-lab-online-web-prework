@@ -28,7 +28,7 @@ def update_counting_hash(hash, key)
   else
     hash[key] = 1
   end
-  hash
+  puts hash
 end
 
 hash = {:apples => 4}
