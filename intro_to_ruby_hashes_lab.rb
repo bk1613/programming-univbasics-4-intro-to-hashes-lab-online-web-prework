@@ -1,29 +1,43 @@
 def new_hash
-  empty_hash = {}
+  # return an empty hash
+
+  empty_hash =Hash.new
 end
 
 def my_hash
-  myhash = {:name => "Brian", :age => 23}
+  # return a valid hash with any key/value pair of your choice
+
+  person = {name: "Amgad", age: "35"}
 end
 
 def pioneer
-  myhash = {:name => "Grace Hopper"}
+  # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
+
+  pioneer ={:name => "Grace Hopper"}
 end
 
 def id_generator
-  idgenerator = {:id => 2}
+  # return a hash with a key :id assigned to positive integer
+
+  id_generator ={:id =>1}
 end
 
 def my_hash_creator(key, value)
-  myhash[key] = value
+  # return a hash that includes the key and value parameters passed into this method
+
+  my_hash_creator= {key => value}
 end
 
 def read_from_hash(hash, key)
+  # return the correct value using the hash and key parameters
   hash[key]
 end
 
 def update_counting_hash(hash, key)
- 
+  # given a hash an a key as parameters, return an updated hash
+  # if the provided key is not present in the hash, add it and assign it to the value of 1
+  # if the provided key is present, increment its value by 1
+
   if hash[key]
     hash[key] +=1
   else 
@@ -31,4 +45,5 @@ def update_counting_hash(hash, key)
   end
   hash
 end
+
 
